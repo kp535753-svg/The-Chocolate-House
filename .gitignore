@@ -1,0 +1,7 @@
+# Local dev server — not needed in the repo
+serve.ps1
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
