@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="theme-color" content="#1A0F0A" />
+  <meta name="description" content="The Chocolate House – Premium Chocolates, Imported Snacks & Refreshing Beverages. Discover luxury chocolates, kunafa specials, imported drinks and more." />
+  <meta name="keywords" content="chocolate, premium chocolate, kunafa, imported drinks, energy drinks, dark chocolate, luxury chocolate, The Chocolate House" />
+  <meta name="author" content="The Chocolate House" />
+  <meta property="og:title" content="The Chocolate House – Premium Chocolates & Imported Snacks" />
+  <meta property="og:description" content="Discover premium chocolates, kunafa specials, imported beverages and gourmet treats from around the world." />
+  <meta property="og:type" content="website" />
+  <title>The Chocolate House – Premium Chocolates & Imported Snacks</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="The Chocolate House – Home">
+        <img src="Logo.jpeg" alt="The Chocolate House Logo" class="nav-logo-img" />
+        <span class="logo-text">The Chocolate House</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#categories" class="nav-link">Categories</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+          <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+        <button class="wishlist-btn" id="wishlistNavBtn" aria-label="View wishlist">
+          <i class="fas fa-heart"></i>
+          <span class="wishlist-count" id="wishlistCount">0</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="home" aria-label="Hero section">
+    <div class="hero-bg">
+      <div class="hero-overlay"></div>
+      <div class="hero-particles" id="heroParticles" aria-hidden="true"></div>
+      <!-- Decorative chocolate shapes -->
+      <div class="choc-shape shape-1" aria-hidden="true">🍫</div>
+      <div class="choc-shape shape-2" aria-hidden="true">🍬</div>
+      <div class="choc-shape shape-3" aria-hidden="true">🍭</div>
+      <div class="choc-shape shape-4" aria-hidden="true">🍫</div>
+      <div class="choc-shape shape-5" aria-hidden="true">⭐</div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-logo-mark">
+        <img src="Logo.jpeg" alt="The Chocolate House Logo" class="hero-logo-img" />
+      </div>
+      <div class="hero-badge">
+        <i class="fas fa-star"></i> Premium Luxury Boutique
+      </div>
+      <h1 class="hero-title">
+        <span class="hero-title-main">The Chocolate</span>
+        <span class="hero-title-accent">House</span>
+      </h1>
+      <p class="hero-tagline">Premium Chocolates, Imported Snacks &amp; Refreshing Beverages</p>
+      <p class="hero-sub">From single-origin dark chocolates to exotic imported drinks — curated for every chocolate lover.</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-primary">
+          <i class="fas fa-utensils"></i> Explore Menu
+        </a>
+        <a href="https://wa.me/91XXXXXXXXXX?text=Hello! I'd like to place an order from The Chocolate House." class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Order via WhatsApp">
+          <i class="fab fa-whatsapp"></i> Order on WhatsApp
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="stat-number">50+</span>
+          <span class="stat-label">Products</span>
+        </div>
+        <div class="hero-stat">
+          <span class="stat-number">7</span>
+          <span class="stat-label">Categories</span>
+        </div>
+        <div class="hero-stat">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Premium</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="hero-scroll" aria-label="Scroll to about section">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="about section" id="about" aria-label="About The Chocolate House">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual" aria-hidden="true">
+          <div class="about-image-frame">
+            <div class="about-emoji-display">
+              <span>🍫</span><span>🍬</span><span>🍭</span>
+              <span>🥐</span><span>🥂</span><span>⭐</span>
+            </div>
+          </div>
+          <div class="about-badge-float">
+            <i class="fas fa-award"></i>
+            <span>Premium Quality</span>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <div class="section-label">Our Story</div>
+          <h2 class="section-title">Crafted for the <em>Discerning</em> Palate</h2>
+          <p class="about-text">
+            The Chocolate House brings together premium chocolates, imported confectionery, unique beverages, and gourmet treats from around the world. Discover exciting flavors, luxury chocolate experiences, and carefully selected products for every chocolate lover.
+          </p>
+          <div class="about-features">
+            <div class="about-feature">
+              <i class="fas fa-globe"></i>
+              <div>
+                <strong>Globally Sourced</strong>
+                <p>Imported selections from the finest producers worldwide</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <i class="fas fa-leaf"></i>
+              <div>
+                <strong>Carefully Curated</strong>
+                <p>Each product handpicked for quality and taste</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <i class="fas fa-heart"></i>
+              <div>
+                <strong>Made with Passion</strong>
+                <p>Serving chocolate lovers with love and expertise</p>
+              </div>
+            </div>
+          </div>
+          <a href="#menu" class="btn btn-primary">Browse Our Collection</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CATEGORIES ===================== -->
+  <section class="categories section" id="categories" aria-label="Product categories">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Collections</div>
+        <h2 class="section-title">Our <em>Finest</em> Categories</h2>
+        <p class="section-subtitle">Explore our handpicked selection of premium chocolates, exotic drinks, and gourmet delights</p>
+      </div>
+
+      <div class="categories-grid">
+        <button class="category-card" data-category="all" aria-label="View all products">
+          <div class="category-icon">🍫</div>
+          <h3>All Products</h3>
+          <p>Entire Collection</p>
+          <span class="category-count" id="cat-count-all">0</span>
+        </button>
+        <button class="category-card" data-category="Chocolates" aria-label="View chocolate collection">
+          <div class="category-icon">🍬</div>
+          <h3>Chocolates</h3>
+          <p>Milk, White & More</p>
+          <span class="category-count" id="cat-count-chocolates">0</span>
+        </button>
+        <button class="category-card" data-category="Kunafa Specials" aria-label="View Kunafa specials">
+          <div class="category-icon">🥐</div>
+          <h3>Kunafa Specials</h3>
+          <p>Pistachio & More</p>
+          <span class="category-count" id="cat-count-kunafa">0</span>
+        </button>
+        <button class="category-card" data-category="Imported Drinks" aria-label="View imported drinks">
+          <div class="category-icon">🥤</div>
+          <h3>Imported Drinks</h3>
+          <p>Exotic Flavours</p>
+          <span class="category-count" id="cat-count-imported">0</span>
+        </button>
+        <button class="category-card" data-category="Energy Drinks" aria-label="View energy drinks">
+          <div class="category-icon">⚡</div>
+          <h3>Energy Drinks</h3>
+          <p>Boost & Refresh</p>
+          <span class="category-count" id="cat-count-energy">0</span>
+        </button>
+        <button class="category-card" data-category="Premium Dark Chocolates" aria-label="View premium dark chocolates">
+          <div class="category-icon">🌑</div>
+          <h3>Premium Dark</h3>
+          <p>Intense & Bold</p>
+          <span class="category-count" id="cat-count-dark">0</span>
+        </button>
+        <button class="category-card" data-category="Luxury Chocolates" aria-label="View luxury chocolates">
+          <div class="category-icon">👑</div>
+          <h3>Luxury</h3>
+          <p>Lindt & Ferrero</p>
+          <span class="category-count" id="cat-count-luxury">0</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DIGITAL MENU ===================== -->
+  <section class="menu section" id="menu" aria-label="Digital menu">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Digital Menu</div>
+        <h2 class="section-title">Discover Our <em>Collection</em></h2>
+        <p class="section-subtitle">Over 30 premium products carefully selected for chocolate lovers</p>
+      </div>
+
+      <!-- Search & Filter Bar -->
+      <div class="menu-controls" role="search" aria-label="Menu search and filters">
+        <div class="search-wrap">
+          <i class="fas fa-search search-icon" aria-hidden="true"></i>
+          <input
+            type="search"
+            id="searchInput"
+            class="search-input"
+            placeholder="Search chocolates, drinks, kunafa..."
+            aria-label="Search products"
+            autocomplete="off"
+          />
+          <button class="search-clear" id="searchClear" aria-label="Clear search" hidden>
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+
+        <div class="filter-row">
+          <div class="filter-group">
+            <label for="categoryFilter" class="filter-label">Category</label>
+            <select id="categoryFilter" class="filter-select" aria-label="Filter by category">
+              <option value="all">All Categories</option>
+              <option value="Chocolates">Chocolates</option>
+              <option value="Kunafa Specials">Kunafa Specials</option>
+              <option value="Imported Drinks">Imported Drinks</option>
+              <option value="Energy Drinks">Energy Drinks</option>
+              <option value="Premium Dark Chocolates">Premium Dark Chocolates</option>
+              <option value="Luxury Chocolates">Luxury Chocolates</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="priceFilter" class="filter-label">Max Price</label>
+            <div class="price-range-wrap">
+              <input type="range" id="priceFilter" class="price-range" min="0" max="700" value="700" step="10" aria-label="Filter by maximum price" />
+              <span class="price-value" id="priceValue">₹700</span>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <label for="sortFilter" class="filter-label">Sort</label>
+            <select id="sortFilter" class="filter-select" aria-label="Sort products">
+              <option value="default">Default</option>
+              <option value="price-asc">Price: Low → High</option>
+              <option value="price-desc">Price: High → Low</option>
+              <option value="name-asc">Name: A → Z</option>
+            </select>
+          </div>
+
+          <button class="btn-reset-filters" id="resetFilters" aria-label="Reset all filters">
+            <i class="fas fa-undo"></i> Reset
+          </button>
+        </div>
+      </div>
+
+      <!-- Results count -->
+      <div class="results-info" id="resultsInfo" aria-live="polite">
+        Showing <strong id="resultsCount">0</strong> products
+      </div>
+
+      <!-- Product Grid -->
+      <div class="products-grid" id="productsGrid" role="list" aria-label="Product listing">
+        <!-- Products injected by JS -->
+      </div>
+
+      <!-- Empty state -->
+      <div class="empty-state" id="emptyState" hidden aria-live="polite">
+        <div class="empty-icon">🔍</div>
+        <h3>No products found</h3>
+        <p>Try adjusting your search or filters</p>
+        <button class="btn btn-primary" id="emptyReset">Reset Filters</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALLERY ===================== -->
+  <section class="gallery section" id="gallery" aria-label="Chocolate gallery">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Gallery</div>
+        <h2 class="section-title">A Feast for the <em>Eyes</em></h2>
+        <p class="section-subtitle">The art of premium chocolate, beautifully presented</p>
+      </div>
+
+      <div class="gallery-grid" role="list" aria-label="Gallery images">
+        <div class="gallery-item gallery-large" role="listitem">
+          <div class="gallery-inner">
+            <div class="gallery-emoji">🍫</div>
+            <div class="gallery-overlay">
+              <span>Dark Chocolate Collection</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" role="listitem">
+          <div class="gallery-inner">
+            <div class="gallery-emoji">🍬</div>
+            <div class="gallery-overlay">
+              <span>Milk Chocolates</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" role="listitem">
+          <div class="gallery-inner">
+            <div class="gallery-emoji">🥐</div>
+            <div class="gallery-overlay">
+              <span>Kunafa Specials</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item gallery-tall" role="listitem">
+          <div class="gallery-inner">
+            <div class="gallery-emoji">🥤</div>
+            <div class="gallery-overlay">
+              <span>Imported Beverages</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" role="listitem">
+          <div class="gallery-inner">
+            <div class="gallery-emoji">👑</div>
+            <div class="gallery-overlay">
+              <span>Luxury Selection</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" role="listitem">
+          <div class="gallery-inner">
+            <div class="gallery-emoji">⚡</div>
+            <div class="gallery-overlay">
+              <span>Energy Drinks</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item gallery-wide" role="listitem">
+          <div class="gallery-inner">
+            <div class="gallery-emoji">🎁</div>
+            <div class="gallery-overlay">
+              <span>Gift Collections</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" role="listitem">
+          <div class="gallery-inner">
+            <div class="gallery-emoji">🌑</div>
+            <div class="gallery-overlay">
+              <span>80% & 87% Dark</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section class="testimonials section" id="testimonials" aria-label="Customer testimonials">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Reviews</div>
+        <h2 class="section-title">What Our <em>Customers</em> Say</h2>
+        <p class="section-subtitle">Real experiences from our valued chocolate lovers</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <article class="testimonial-card" aria-label="Testimonial from Ayesha R.">
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <blockquote class="testimonial-text">
+            "The Pistachio Kunafa Bites are absolutely divine! I've never tasted anything like it. The flavour is rich, authentic, and utterly addictive. My family couldn't stop asking for more!"
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">A</div>
+            <div class="author-info">
+              <strong>Ayesha R.</strong>
+              <span>Chocolate Enthusiast</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card featured-testimonial" aria-label="Testimonial from Rohan M.">
+          <div class="testimonial-badge"><i class="fas fa-crown"></i> Top Review</div>
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <blockquote class="testimonial-text">
+            "The SC Madagascar 70% Dark Chocolate is a masterpiece. You can taste the origin — deep, complex, with a beautiful finish. This is proper premium chocolate at a very fair price."
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">R</div>
+            <div class="author-info">
+              <strong>Rohan M.</strong>
+              <span>Dark Chocolate Connoisseur</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card" aria-label="Testimonial from Priya S.">
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <blockquote class="testimonial-text">
+            "CF Marvel drinks are now my absolute favourite! You simply cannot find these exotic flavours anywhere else in the city. The Green Apple one is incredibly refreshing. 10/10!"
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">P</div>
+            <div class="author-info">
+              <strong>Priya S.</strong>
+              <span>Imported Drink Lover</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card" aria-label="Testimonial from Kabir A.">
+          <div class="testimonial-stars" aria-label="4 out of 5 stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="far fa-star"></i>
+          </div>
+          <blockquote class="testimonial-text">
+            "The Lindt 90% Excellence bar is top quality. Delivery was fast and everything was perfectly packaged. The PM 80% with Almond & Pink Salt is also exceptional — bold and balanced."
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">K</div>
+            <div class="author-info">
+              <strong>Kabir A.</strong>
+              <span>Gift Buyer</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card" aria-label="Testimonial from Zara F.">
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <blockquote class="testimonial-text">
+            "Ordering on WhatsApp was so smooth and easy! Got the Ferrero collection as a gift and the presentation was gorgeous. Will definitely be a regular customer here."
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">Z</div>
+            <div class="author-info">
+              <strong>Zara F.</strong>
+              <span>Happy Customer</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card" aria-label="Testimonial from Dev P.">
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <blockquote class="testimonial-text">
+            "Never thought I'd find Barquillo Kunafa Cheesecake bites in my city. The Chocolate House is something truly special — the variety here is unmatched. My go-to store for gifting."
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">D</div>
+            <div class="author-info">
+              <strong>Dev P.</strong>
+              <span>Gourmet Food Lover</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="contact section" id="contact" aria-label="Contact information">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Get In Touch</div>
+        <h2 class="section-title">Visit or <em>Order</em> Today</h2>
+        <p class="section-subtitle">We'd love to help you find your perfect chocolate</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-detail">
+                <h4>Our Location</h4>
+                <p>Your Store Address, City<br />State – PIN Code</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-detail">
+                <h4>Phone / WhatsApp</h4>
+                <a href="tel:+91XXXXXXXXXX">+91 XXXXX XXXXX</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-detail">
+                <h4>Email</h4>
+                <a href="mailto:hello@thechocolatehouse.in">hello@thechocolatehouse.in</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="contact-detail">
+                <h4>Business Hours</h4>
+                <p>Mon – Sat: 10:00 AM – 9:00 PM</p>
+                <p>Sunday: 11:00 AM – 7:00 PM</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://wa.me/91XXXXXXXXXX?text=Hello! I'd like to place an order from The Chocolate House." class="btn btn-whatsapp btn-full" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i> Order on WhatsApp Now
+          </a>
+        </div>
+
+        <!-- Map Embed -->
+        <div class="contact-map">
+          <div class="map-placeholder" aria-label="Map placeholder – replace with Google Maps embed">
+            <div class="map-inner">
+              <i class="fas fa-map-marked-alt" aria-hidden="true"></i>
+              <h4>Find Us on the Map</h4>
+              <p>Replace this placeholder with your Google Maps embed code</p>
+              <code class="map-code">&lt;iframe src="https://maps.google.com/maps?..." ...&gt;&lt;/iframe&gt;</code>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo" aria-label="Site footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Brand -->
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <img src="Logo.jpeg" alt="The Chocolate House Logo" class="footer-logo-img" />
+              <span class="logo-text">The Chocolate House</span>
+            </div>
+            <p class="footer-tagline">Premium Chocolates, Imported Snacks &amp; Refreshing Beverages — curated for every chocolate lover.</p>
+            <div class="footer-social" aria-label="Social media links">
+              <a href="#" class="social-link" aria-label="Follow us on Instagram" title="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="Follow us on Facebook" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://wa.me/91XXXXXXXXXX" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Message us on WhatsApp" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="Follow us on Twitter / X" title="Twitter / X">
+                <i class="fab fa-x-twitter"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <nav class="footer-nav" aria-label="Quick navigation">
+            <h4>Quick Links</h4>
+            <ul role="list">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#categories">Categories</a></li>
+              <li><a href="#menu">Our Menu</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+
+          <!-- Categories -->
+          <nav class="footer-nav" aria-label="Product categories">
+            <h4>Categories</h4>
+            <ul role="list">
+              <li><a href="#menu">Chocolates</a></li>
+              <li><a href="#menu">Kunafa Specials</a></li>
+              <li><a href="#menu">Imported Drinks</a></li>
+              <li><a href="#menu">Energy Drinks</a></li>
+              <li><a href="#menu">Premium Dark</a></li>
+              <li><a href="#menu">Luxury Chocolates</a></li>
+            </ul>
+          </nav>
+
+          <!-- Contact Summary -->
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p><i class="fas fa-map-marker-alt"></i> Your Store Address, City</p>
+            <p><i class="fas fa-phone"></i> +91 XXXXX XXXXX</p>
+            <p><i class="fas fa-envelope"></i> hello@thechocolatehouse.in</p>
+            <p><i class="fas fa-clock"></i> Mon–Sat: 10 AM – 9 PM</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="footerYear"></span> The Chocolate House. All rights reserved.</p>
+        <p>Crafted with <span aria-label="love">❤️</span> for chocolate lovers everywhere.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== FLOATING WHATSAPP ===================== -->
+  <a
+    href="https://wa.me/91XXXXXXXXXX?text=Hello! I'd like to place an order from The Chocolate House."
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat with us on WhatsApp"
+    title="Order on WhatsApp"
+  >
+    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    <span class="whatsapp-tooltip">Order on WhatsApp</span>
+  </a>
+
+  <!-- ===================== WISHLIST MODAL ===================== -->
+  <div class="modal-overlay" id="wishlistModal" role="dialog" aria-modal="true" aria-label="Wishlist" hidden>
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3><i class="fas fa-heart"></i> My Wishlist</h3>
+        <button class="modal-close" id="modalClose" aria-label="Close wishlist">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="modal-body" id="wishlistItems">
+        <!-- Items injected by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== QUICK VIEW MODAL ===================== -->
+  <div class="modal-overlay" id="quickViewModal" role="dialog" aria-modal="true" aria-label="Product quick view" hidden>
+    <div class="modal-box modal-product">
+      <button class="modal-close" id="quickViewClose" aria-label="Close quick view">
+        <i class="fas fa-times"></i>
+      </button>
+      <div id="quickViewContent">
+        <!-- Injected by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast" role="alert" aria-live="assertive" aria-atomic="true"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
